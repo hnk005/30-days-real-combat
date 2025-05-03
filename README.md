@@ -5,9 +5,10 @@ Chào mừng bạn đến với thử thách **30 ngày code**! Mỗi ngày là 
 
 ## 🗓 Danh sách dự án
 
-| Ngày   | Tên dự án                | Demo     | GitHub    |
-| ------ | ------------------------ | -------- | --------- |
-| Day 01 | [Design Product Card](#) | [Xem](#) | [Repo](#) |
+| Ngày   | Tên dự án                | Demo     |
+| ------ | ------------------------ | -------- |
+| Day 01 | [Design Product Card](#) | [Xem](#) |
+| Day 02 | [Design Profile Card](#) | [Xem](#) |
 
 ---
 
