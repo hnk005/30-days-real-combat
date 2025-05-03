@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #e26e70;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.6rem;
+  font-family: "Poppins";
+  background: linear-gradient(
+    45deg,
+    rgb(65, 88, 208) 0%,
+    rgb(200, 80, 192) 50%,
+    rgb(255, 204, 112) 100%
+  );
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.open-modal-btn {
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.open-modal-btn:hover {
+  opacity: 70%;
+}
+
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.modal__inner {
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: modal-show 0.2s linear;
+  z-index: 1000;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+}
+
+.modal__header > i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal__header > i:hover {
+  opacity: 70%;
+}
+
+.modal__body {
+  padding: 15px;
+}
+.modal__body > h2 {
+  color: var(--primary-color);
+}
+
+.modal__body > p {
+  padding: 5px 0px;
+}
+
+.modal__footer {
+  text-align: end;
+  padding: 15px;
+}
+
+.modal__footer > button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+.modal__footer > button:hover {
+  opacity: 70%;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes modal-show {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30%;
+    opacity: 1;
+  }
+}
