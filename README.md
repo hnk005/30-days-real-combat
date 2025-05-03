@@ -10,6 +10,7 @@ Chào mừng bạn đến với thử thách **30 ngày code**! Mỗi ngày là 
 | Day 01 | [Design Product Card](#) | [Xem](#) |
 | Day 02 | [Design Profile Card](#) | [Xem](#) |
 | Day 03 | [Create Modal](#)        | [Xem](#) |
+| Day 04 | [Image Gallery](#)       | [Xem](#) |
 
 ---
 
